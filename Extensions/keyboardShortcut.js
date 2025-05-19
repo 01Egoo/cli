@@ -60,7 +60,7 @@
 
 		// CTRL + Arrow Up Increase Volume CTRL + Arrow Down Decrease Volume
 		"ctrl+up": { callback: () => Spicetify.Player.setVolume(Spicetify.Player.getVolume() + 0.05) },
-		"ctrl+down": { callback: () => Spicetify.Player.setVolume(Spicetify.Player.getVolume() - 0.05) },
+		"ctrl+down": { callback: () => Spicetify.Player.setVolume(Spicetify.Player.skipSeconds() - 5) },
 
 		// Activate Vim mode and set cancel key to 'ESCAPE'
 		f: {
